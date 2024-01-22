@@ -1,0 +1,169 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url(http://fonts.googleapis.com/css?family-Playfair+Display|Muli:300,403);
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+  background-image: url('https://img.freepik.com/free-photo/top-view-keyboard-desk-with-notebook-copy-space_23-2148415052.jpg?size=626&ext=jpg&ga=GA1.1.973819476.1682843090&semt=ais');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+  font-family: 'Playfair Display', serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+font-family:sans-serif;
+font-weight :300;
+}
+.form-bg{
+  background-color:#383838 ;
+  color: white;
+  padding-bottom: 2em;
+}
+.btn-custom{
+background-color: #fff;
+color: #0a8fd5;
+font-family: 'Muli', sans-serif;
+font-weight: 300;
+border-radius: 8px;
+padding: 10px 20px;
+&:hover {
+color: #383838;
+transition: 0.5s;
+background-color: #fff;
+text-decoration: none;
+}
+}
+
+.delete-button {
+  /* Add your styling here */
+  background-color: #ff0000; /* Example background color */
+  color: #ffffff; /* Example text color */
+  /* Add any other styles you want */
+ 
+}
+
+
+.navbar{
+font-family: 'Muli' , sans-serif;
+text-transform: uppercase;
+}
+.navbar-default {
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: #000000;
+.navbar-nav > li > a {
+color: #ffffff;
+}
+.navbar-link {
+color: #ffffff;
+}
+.navbar-brand {
+color: #ffffff;
+letter-spacing: 1.1px;
+}
+}
+.form-actions{
+  padding-top: 1em;
+  color:#000000;
+}
+.links{
+  margin-top: 20px;
+  .btn-default{
+    color: #14213d;
+
+  }
+}
+
+.message {
+box-sizing: border-box;
+background-color: #383838;
+margin-bottom: 25px;
+margin-right: 10px;
+margin-left:10px;
+padding: 1.4em 1.4em;
+height: 150px;
+border-bottom: 4px solid #0a8fd5;
+
+.message-title {
+font-size: 1.5em;
+font-family: 'Muli',sans-serif;
+font-weight: 300;
+margin-top:0;
+color: white;
+margin-bottom: 25px;
+}
+.btn-custom{
+  margin-top: 20px;
+}
+}
+.message:nth-child(4n){
+  clear:left;
+}
+
+.message-show{
+  box-sizing: border-box;
+  background-color: #383838;
+  padding: 2.0em 1.5em;
+  border-bottom: 4px solid #0a8fd5;
+  color: #fff;
+  font-family: 'Muli',sans-serif;
+  font-weight: 300;
+
+  h2{
+    margin-top: 0;
+  }
+  .message-desc{
+    font-size: 1.1em;
+    line-height: 1.75;
+    margin-bottom: 50px;
+  }
+
+  .message-posted-by{
+    color: #eee;
+    font-size:0.9em;
+  }
+
+  .reply-to-msg{
+    margin-top:50px;
+  }
+}
+
+.comment{
+  border-bottom: 1px solid #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  .comment-content{
+    font-size:1.25em;
+  }
+  .comment-posted-by{
+    color:#eee;
+    font-size: 0.8em;
+  }
+
+  .links{
+    margin-top: 15px;
+    
+    a{
+      color:#0a8fd5;
+      margin-right: 15px;
+      padding: 1em;
+    }
+  }
+}
